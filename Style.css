@@ -1,0 +1,96 @@
+body {
+    background-color: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 1px;
+    width: 200px;
+    background-image: url(/picture/sakura.jpg);
+    background-size: cover;
+    display: inline-block;
+}
+
+.menu a {
+    padding: 20px 20px;
+    line-height: 2em;
+    color: blueviolet;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: pink;
+    color: cornflowerblue;
+}
+
+.menu .sub {
+    color: navy;
+    position: absolute;
+    top: auto;
+    box-shadow: 10px 10px 5px lightgrey;
+
+}
+
+.menu .sub li {
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.menu ul li:hover .sub li {
+    height: 100px;
+}
+
+h1,
+.introduction {
+    background-image: url(/picture/banner1.jpg);
+    background-position: center;
+    background-size: auto;
+    color: darkgoldenrod;
+    margin: auto;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    width: auto;
+    display: block;
+    padding: 5px;
+}
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+}
+
+@media only screen and (max-width:200px) {
+    .menu ul {
+        width: 150px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+
+    h1,
+    .introduction {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+
+    h1,
+    .introduction {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:100px) {
+    .menu ul {
+        width: 80px;
+        font-size: 8px;
+    }
+/*As the length of the welcome speech is long.When the page is reduce to width 1400px, some word will be missing. Therefore, the font size should be reduce so that can show it. Also, the menu's width is 200px, when the frame part of the menu is less than 200px, some of the word cannot be show and the part menu will be missing. In order to show a clear message for the user, the font size and the width should be reduced. */

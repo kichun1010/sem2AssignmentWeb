@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Japanese Learning</title>
+    <link rel="stylesheet" href="Style2.css" />
+    <script type="text/javascript">
+        function msg() {
+            alert("Apply Completed! Please wait for the confirm email ^.^");
+        }
+
+        function checkAns() {
+            var score = 0;
+            if (document.jt.Q1.value != 'ka') {
+                alert("Question 1 is wrong");
+            }
+            else{score +=1;}
+            if (document.jt.Q2.value != 'ne') {
+                alert("Question 2 is wrong");
+            }
+            else{score +=1;}
+            if (document.jt.Q3.value != 'ro') {
+                alert("Question 3 is wrong");
+            }
+            else{score +=1;}
+            if (document.jt.Q4.value != 'ba') {
+                alert("Question 4 is wrong");
+            }
+            else{score +=1;}
+            if (document.jt.Q5.value != 'n') {
+                alert("Question 5 is wrong");
+            }
+            else{score +=1;}
+            alert("Your score is "+score);
+        }
+    </script>
+<!--To check the answer is it correct if not it will print the message-->
+</head>
+
+<body>
+    <div id="japanese">
+        In order to let more people to enjoy their trip in Japan. I would like to hold a free Japanese class which include the basic knowledge of Japanese and some sentences can be used during travelling.Because of the shortage of resources and time, the japanese class can only be provided for the first 20 people so if you are interested on it, you can fill in the form below to applicate as soon as possible. Finally, I would like to provide a simple Japanese test for you to test your Japanese knowledge.Thank you for your visiting.
+    </div>
+    <br>
+    <br>
+    <form name="form" onSubmit="msg()">
+        <table border="5" id="form">
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="name" pattern="^[A-Z][A-Za-z]*" title="Capital first character" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Birthday</td>
+                <td>
+                    <input type="date" name="bdate" title="DD/MM/YYYY" pattern="^([0123]?\d|2[0-3]):[0-5]?\d:[0-5]?\d$" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Hong Kong ID number</td>
+                <td>
+                    <input type="text" name="id" maxlength="8" pattern="^[A-Z][0-9]*" required />
+                    e.g A1234567
+                </td>
+                <!--The HK ID format is used-->
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="M" required="required" />Male
+                    <input type="radio" name="gender" value="F" />Female
+                </td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td>
+                    <input type="text" name="phone" title="12345678" pattern="^([0-9]*)" minlength="8" maxlength="8" required />
+                </td>
+                <!--Only HK phone number can be entered (in 8digit)-->
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input type="email" title="abc@gmail.com" name="email" pattern="^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$)" required />
+                    <!--User can only enter the pattern with the correct email format-->
+                </td>
+            </tr>
+            <tr>
+                <td>Lesson Time</td>
+                <td>
+                    <input type="checkbox" name="lesson" value="mon" />16:00 - 18:00 (Monday)
+                    <br>
+                    <input type="checkbox" name="lesson" value="sun" />10:00 - 12:00 (Sunday)
+                    <br>
+                    <input type="checkbox" name="lesson" value="sat" />12:00 - 14:00 (Saturday)
+                    <br>
+                    <input type="checkbox" name="lesson" value="fri" />18:00 - 20:00 (Friday)
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" id="Submit" />
+        <input type="reset" value="Reset" id="Reset" />
+    </form>
+    <!--The above form is for apply the Japanese Class-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="h8">
+        Japanese Test
+    </div>
+
+    <form id="jt" name="jt" onSubmit="checkAns()">
+        <table border="5" id="test">
+            <tr>
+                <td>
+                    <h8>Question 1</h8><br> What is the pronunciation of 「か」?
+                </td>
+                <td>
+                    <input type="radio" name="Q1" value="a" /> A
+                    <input type="radio" name="Q1" value="na" />NA
+                    <input type="radio" name="Q1" value="ka" />KA
+                    <input type="radio" name="Q1" value="U" />U
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <h8>Question 2</h8><br> What is the pronunciation of 「ね」?
+                </td>
+                <td>
+                    <input type="radio" name="Q2" value="he" /> HE
+                    <input type="radio" name="Q2" value="ya" />YA
+                    <input type="radio" name="Q2" value="ko" />KO
+                    <input type="radio" name="Q2" value="ne" />NE
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <h8>Question 3</h8><br> What is the pronunciation of 「ろ」?
+                </td>
+                <td>
+                    <input type="radio" name="Q3" value="po" /> PO
+                    <input type="radio" name="Q3" value="i" />I
+                    <input type="radio" name="Q3" value="e" />E
+                    <input type="radio" name="Q3" value="ro" />RO
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <h8>Question 4</h8><br> What is the pronunciation of 「ば」?
+                </td>
+                <td>
+                    <input type="radio" name="Q4" value="ba" /> BA
+                    <input type="radio" name="Q4" value="o" />O
+                    <input type="radio" name="Q4" value="re" />RE
+                    <input type="radio" name="Q4" value="yo" />YO
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <h8>Question 5</h8><br> What is the pronunciation of 「ん」?
+                </td>
+                <td>
+                    <input type="radio" name="Q5" value="fu" /> FU
+                    <input type="radio" name="Q5" value="n" />N
+                    <input type="radio" name="Q5" value="ra" />RA
+                    <input type="radio" name="Q5" value="ku" />KU
+                </td>
+            </tr>
+            <br>
+        </table>
+        <input type="submit" value="Complete" id="Answer" />
+    </form>
+<!--This is a simple test of Japanese. If the user choose the correct choice, the score will add 1. If the user choose the wrong answer, the message of question that is wrong will appear. Finally, the total score will be shown.-->
+</body>
+
+</html>

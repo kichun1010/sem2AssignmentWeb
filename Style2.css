@@ -1,0 +1,340 @@
+/*The style of the content part of the page will be written in the new css file so that it will not be to messy.*/
+body {
+    background-image: url(/picture/bg.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#temple,
+#bath,
+#table,
+#payment,
+#hanami,
+#asakusa,
+#matsuri,
+#odori,
+#zuiki,
+#yuki,
+#drama2,
+#drama3,
+#movie1,
+#movie2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    height: auto;
+    width: 35%;
+}
+
+
+
+#temple {
+    background-image: url(/picture/temple1.jpg);
+}
+
+#temple:hover {
+    width: 50%;
+    height: auto;
+}
+
+#bath {
+    background-image: url(/picture/onsen1.jpg);
+}
+
+#bath:hover {
+    width: 50%;
+    height: auto;
+}
+
+#table {
+    background-image: url(/picture/table1.jpg);
+
+}
+
+#table:hover {
+    width: 50%;
+    height: auto;
+
+}
+
+#payment {
+    background-image: url(/picture/pay1.jpg);
+
+}
+
+#payment:hover {
+    width: 50%;
+    height: auto;
+}
+
+#hanami {
+    background-image: url(/picture/hanami.jpg);
+}
+
+#hanami:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#asakusa {
+    background-image: url(/picture/Asakusafest-02.jpg);
+}
+
+#asakusa:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#matsuri {
+    background-image: url(/picture/matsuri.jpg);
+}
+
+#matsuri:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#odori {
+    background-image: url(/picture/odori2.jpg);
+}
+
+#odori:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#zuiki {
+    background-image: url(/picture/zuiki.jpg);
+}
+
+#zuiki:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#yuki {
+    background-image: url(/picture/yuki.jpg);
+}
+
+#yuki:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#drama2 {
+    background-image: url(/picture/drama2.jpg);
+}
+
+#drama2:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#drama3 {
+    background-image: url(/picture/drama3.jpg);
+}
+
+#drama3:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#movie1 {
+    background-image: url(/picture/movie1.jpg);
+}
+
+#movie1:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+#movie2 {
+    background-image: url(/picture/movie2.jpg);
+}
+
+#movie2:hover {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+span {
+    font-size: 18px;
+    color: darkslateblue;
+    font-family: monospace;
+}
+
+.title {
+    font-size: 24px;
+    color: darkslategrey;
+    font-family: sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-size: 24px;
+    font-family: fantasy;
+}
+
+#japanese {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightpink;
+    font-size: 18px;
+    text-align: center;
+    font-family: monospace;
+    color: darkslateblue;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-family:monospace;
+    width:490px;
+    color: darkslateblue;
+}
+
+#Submit{
+    margin-left: 45%;
+}
+
+#h8{
+    font-size: 24px;
+    border: 1px solid lightskyblue;
+    background-color: lightskyblue;
+    width: 100%;
+    color: dimgrey;
+    font-family: fantasy;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jt{
+    font-family:monospace;
+    color: darkslategray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 490px;
+}
+#Answer{
+    margin-left: 40%;
+}
+/*The above part are some common part of style of the content and the style of full screen.The picture of each content are used for the background of the message box so that to avoid wasting the area. Also, when the user touch the message box, it will enlarge so that they can see the words and the picture clearly for the content inside.*/
+
+@media only screen and (max-width:1200px) {
+    span {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h7 {
+        font-size: 18px;
+    }
+
+    #temple,
+    #bath,
+    #table,
+    #payment,
+    #hanami,
+    #asakusa,
+    #matsuri,
+    #odori,
+    #zuiki,
+    #yuki,
+    #drama2,
+    #drama3,
+    #movie1,
+    #movie2 {
+        width: 40%;
+        height: auto;
+    }
+
+    #temple {
+        background-image: url(/picture/temple2.jpg)
+    }
+
+    #bath {
+        background-image: url(/picture/onsen2.jpg)
+    }
+
+    #table {
+        background-image: url(/picture/table2.jpg)
+    }
+
+    #payment {
+        background-image: url(/picture/pay2.jpg)
+    }
+
+}
+
+/*When the width of the page is below 1200px, it is better to show the content in a smaller way and the picture of the etiquette will be changed to another one so that to make the page to be more attractive.*/
+
+@media only screen and (max-width:500px) {
+
+    #temple,
+    #bath,
+    #table,
+    #payment,
+    #hanami,
+    #asakusa,
+    #matsuri,
+    #odori,
+    #zuiki,
+    #yuki,
+    #drama2,
+    #drama3,
+    #movie1,
+    #movie2 {
+        width: 80%;
+    }
+
+    #temple {
+        background-image: url(/picture/temple3.jpg)
+    }
+
+    #bath {
+        background-image: url(/picture/onsen3.jpg)
+    }
+
+    #table {
+        background-image: url(/picture/table3.jpg)
+    }
+
+    #payment {
+        background-image: url(/picture/pay3.jpg)
+    }
+
+}
+
+/*In order to match with the width 500px, the content will be show by row form, 1 row for 1introduction otherwise it is difficult for user to read the information.Also, the picture of etiquette will be changed.*/
